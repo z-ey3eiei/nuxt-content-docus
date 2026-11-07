@@ -9,6 +9,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "postinstall": "nuxt prepare layer",
     "dev": "pnpm run docs:dev",
     "docs:dev": "cd docs && TMPDIR=/tmp nuxt dev --extends ../layer",
     "docs:build": "nuxt build docs --extends ../layer",
